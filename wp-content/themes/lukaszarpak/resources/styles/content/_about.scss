@@ -4,7 +4,7 @@ body.page-id-13 {
 
 		.wp-block-columns {
 			&.about-columns {
-				gap: 4rem;
+				gap: 5rem 2rem;
 			}
 
 			&.experience {
@@ -24,14 +24,16 @@ body.page-id-13 {
 				}
 
 				.years {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
+					display: grid;
 					gap: 15px;
 					padding-top: 3rem;
 
 					.year {
 						color: $color5;
+					}
+
+					span {
+						text-align: center;
 					}
 
 					.dot::before {
@@ -113,8 +115,7 @@ body.page-id-13 {
 
 						.icons {
 							margin-bottom: 2rem;
-							display: flex;
-							align-items: center;
+							display: grid;
 							gap: 2rem;
 
 							ul {

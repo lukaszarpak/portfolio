@@ -41,6 +41,14 @@ body {
 			justify-content: center;
 		}
 
+		&.mobile-center-btn {
+			justify-content: center;
+
+			@include media(mobile) {
+				justify-content: flex-start;
+			}
+		}
+
 		&.align-top {
 			margin-top: initial;
 		}

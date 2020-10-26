@@ -2,7 +2,6 @@ body {
 	.wp-block-group {
 		border-radius: 1rem;
 		@extend .top-bottom-padding;
-		@extend .top-bottom-margin;
 		@extend .page-limits;
 
 		.wp-block-group__inner-container {

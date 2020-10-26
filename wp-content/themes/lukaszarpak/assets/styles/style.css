@@ -31,12 +31,12 @@
   }
 }
 
-.top-bottom-margin, body .wp-block-group {
+.top-bottom-margin {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 1000px) {
-  .top-bottom-margin, body .wp-block-group {
+  .top-bottom-margin {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
@@ -149,9 +149,20 @@ body .gradient3 {
 body .limit-width {
   max-width: 500px;
 }
+body .padding-bottom {
+  margin-bottom: 1rem;
+}
 @media only screen and (min-width: 1000px) {
   body .padding-bottom {
     margin-bottom: 2.5rem;
+  }
+}
+body .mobile-center {
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  body .mobile-center {
+    text-align: initial;
   }
 }
 body *:focus {
@@ -250,6 +261,14 @@ body .wp-block-buttons {
 }
 body .wp-block-buttons.centered {
   justify-content: center;
+}
+body .wp-block-buttons.mobile-center-btn {
+  justify-content: center;
+}
+@media only screen and (min-width: 600px) {
+  body .wp-block-buttons.mobile-center-btn {
+    justify-content: flex-start;
+  }
 }
 body .wp-block-buttons.align-top {
   margin-top: initial;
@@ -823,7 +842,7 @@ body.single-post .main-wrapper main .wp-block-image {
   display: flex;
   padding: 3rem;
   overflow-x: scroll;
-  margin: 50px auto;
+  margin: 0 auto 50px;
 }
 .card-list .card {
   height: 350px;
@@ -885,7 +904,7 @@ body.page-id-13 .main-wrapper {
   margin-top: 8rem;
 }
 body.page-id-13 .main-wrapper .wp-block-columns.about-columns {
-  gap: 4rem;
+  gap: 5rem 2rem;
 }
 body.page-id-13 .main-wrapper .wp-block-columns.experience {
   grid-template-columns: 1fr;
@@ -905,14 +924,15 @@ body.page-id-13 .main-wrapper .wp-block-columns.experience .years-column {
   }
 }
 body.page-id-13 .main-wrapper .wp-block-columns.experience .years {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   gap: 15px;
   padding-top: 3rem;
 }
 body.page-id-13 .main-wrapper .wp-block-columns.experience .years .year {
   color: #a29db8;
+}
+body.page-id-13 .main-wrapper .wp-block-columns.experience .years span {
+  text-align: center;
 }
 body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before {
   font-family: "Font Awesome 5 Free";
@@ -985,8 +1005,7 @@ body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-li
 }
 body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons {
   margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
+  display: grid;
   gap: 2rem;
 }
 body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul {

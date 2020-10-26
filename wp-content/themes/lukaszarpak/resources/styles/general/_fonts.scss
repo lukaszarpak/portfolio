@@ -122,8 +122,18 @@ body {
 	}
 
 	.padding-bottom {
+		margin-bottom: 1rem;
+
 		@include media(tablet) {
 			margin-bottom: 2.5rem;
+		}
+	}
+
+	.mobile-center {
+		text-align: center;
+
+		@include media(mobile) {
+			text-align: initial;
 		}
 	}
 
