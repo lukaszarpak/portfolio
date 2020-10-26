@@ -721,7 +721,7 @@ body.single-post .main-wrapper aside .projects-menu-exit i {
   }
 }
 body.single-post .main-wrapper aside .section-title {
-  margin-bottom: 1rem;
+  font-size: 1.75em;
 }
 body.single-post .main-wrapper aside .card-list {
   overflow-y: scroll;
@@ -761,6 +761,7 @@ body.single-post .main-wrapper aside .card-list .card:first-of-type {
 }
 body.single-post .main-wrapper aside .card-list .card .card-header h3 {
   margin: 0;
+  font-size: 1.5rem;
 }
 body.single-post .main-wrapper aside .card-list .card .card-description p {
   margin: 0;

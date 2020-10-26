@@ -126,7 +126,7 @@ body.single-post {
 			}
 
 			.section-title {
-				margin-bottom: 1rem;
+				font-size: $font-lg;
 			}
 
 			.card-list {
@@ -172,6 +172,7 @@ body.single-post {
 					.card-header {
 						h3 {
 							margin: 0;
+							font-size: 1.5rem;
 						}
 					}
 
