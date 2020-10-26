@@ -1005,16 +1005,15 @@ body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-li
 }
 body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons {
   margin-bottom: 2rem;
-  display: grid;
-  gap: 2rem;
 }
 body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   padding: 0;
-  display: flex;
-  margin: 1rem 0 0 0;
+  margin: 1rem auto 0 0;
   width: fit-content;
-  gap: 1rem;
   justify-content: center;
 }
 body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i {
