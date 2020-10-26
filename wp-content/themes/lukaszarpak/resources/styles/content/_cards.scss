@@ -41,7 +41,7 @@
 			min-width: 300px;
 		}
 
-		&:focus-within ~ .card,
+		&:focus ~ .card,
 		&:hover ~ .card {
 			transform: translateX(130px);
 		}

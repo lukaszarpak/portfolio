@@ -841,7 +841,7 @@ body.single-post .main-wrapper main .wp-block-image {
     min-width: 300px;
   }
 }
-.card-list .card:focus-within ~ .card, .card-list .card:hover ~ .card {
+.card-list .card:focus ~ .card, .card-list .card:hover ~ .card {
   transform: translateX(130px);
 }
 .card-list .card:hover {
