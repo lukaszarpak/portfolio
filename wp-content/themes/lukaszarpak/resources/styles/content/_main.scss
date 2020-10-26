@@ -25,7 +25,7 @@ body {
 		display: none;
 	}
 
-	&.page-id-6 {
+	&.page-id-12 {
 		.left-icons {
 			display: block;
 			position: absolute;
@@ -42,7 +42,7 @@ body {
 					margin: 0;
 
 					a i {
-						font-size: $font-md;
+						font-size: $font-lg;
 						@extend .gradient;
 					}
 				}
@@ -56,12 +56,17 @@ body {
 			background-color: $color3;
 			border-radius: 1rem;
 			@extend .box-shadow;
+			transition: 0.2s;
 
 			a {
 				display: block;
 				padding: 1rem 2rem;
 				font-weight: bold;
 				@extend .gradient;
+			}
+
+			&:hover {
+				transform: translateY(-0.7rem);
 			}
 		}
 	}
