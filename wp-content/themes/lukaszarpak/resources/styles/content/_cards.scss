@@ -44,6 +44,7 @@
 		&:focus ~ .card,
 		&:hover ~ .card {
 			transform: translateX(130px);
+			-webkit-appearance: none;
 		}
 
 		&:hover {

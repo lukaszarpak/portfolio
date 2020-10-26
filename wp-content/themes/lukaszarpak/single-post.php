@@ -28,7 +28,7 @@ get_header();
 
 		foreach ( $projects_posts as $p ) {
 			$output .= '
-			<article class="card">
+			<article class="card" tabindex="1">
 				<div class="card-header">
 					<h3><a href="' . esc_url( get_post_permalink( $p->ID ) ) . '">' . esc_attr( $p->post_title ) . '</a></h3>
 				</div>
@@ -74,7 +74,7 @@ get_header();
 
 		foreach ( $projects_posts as $p ) {
 			$output .= '
-			<article class="card">
+			<article class="card" tabindex="1">
 				<div class="card-header">
 					<h3><a href="' . esc_url( get_post_permalink( $p->ID ) ) . '">' . esc_attr( $p->post_title ) . '</a></h3>
 				</div>

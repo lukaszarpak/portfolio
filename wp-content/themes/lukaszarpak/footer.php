@@ -40,13 +40,13 @@
 	<div class="footer-second">
 		<ul>
 			<li>
-				<a href="/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+				<a href="https://www.linkedin.com/in/%C5%82ukasz-szarpak-096b15149/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 			</li>
 			<li>
-				<a href="/" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://github.com/lukaszarpak" target="_blank"><i class="fab fa-github"></i></a>
 			</li>
 			<li>
-				<a href="/" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.facebook.com/Lukaszarpak" target="_blank"><i class="fab fa-facebook"></i></a>
 			</li>
 		</ul>
 	</div>		

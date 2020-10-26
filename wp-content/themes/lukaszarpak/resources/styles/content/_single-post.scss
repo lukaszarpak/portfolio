@@ -155,7 +155,7 @@ body.single-post {
 					margin: -270px 0 0 0;
 					box-shadow: 0 0 3rem #000;
 
-					&:focus-within ~ .card,
+					&:focus ~ .card,
 					&:hover ~ .card {
 						transform: translateY(210px);
 					}

@@ -37,7 +37,7 @@ class Featured_Projects_Crontoller {
 		$output = '<section class="card-list">';
 
 		foreach ( $posts as $p ) {
-			$output .= '<article class="card">
+			$output .= '<article class="card" tabindex="1">
 			<div class="card-header">
 				<h3>' . esc_attr( $p->post_title ) . '</h3>
 			</div>

@@ -154,6 +154,10 @@ body .limit-width {
     margin-bottom: 2.5rem;
   }
 }
+body *:focus {
+  outline: none;
+  -webkit-appearance: none;
+}
 
 body .wp-block-group {
   border-radius: 1rem;
@@ -745,7 +749,7 @@ body.single-post .main-wrapper aside .card-list .card {
   margin: -270px 0 0 0;
   box-shadow: 0 0 3rem #000;
 }
-body.single-post .main-wrapper aside .card-list .card:focus-within ~ .card, body.single-post .main-wrapper aside .card-list .card:hover ~ .card {
+body.single-post .main-wrapper aside .card-list .card:focus ~ .card, body.single-post .main-wrapper aside .card-list .card:hover ~ .card {
   transform: translateY(210px);
 }
 body.single-post .main-wrapper aside .card-list .card:hover {
@@ -843,6 +847,7 @@ body.single-post .main-wrapper main .wp-block-image {
 }
 .card-list .card:focus ~ .card, .card-list .card:hover ~ .card {
   transform: translateX(130px);
+  -webkit-appearance: none;
 }
 .card-list .card:hover {
   transform: translateY(-1rem);
