@@ -1,0 +1,48 @@
+body {
+	.btn,
+	button {
+		padding: 0.3rem 3rem 0.4rem;
+		border: 3px solid $color7;
+		border-radius: 0;
+		font-family: $font-body-bold;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+		background-color: $color2;
+		transition: 0.3s;
+		width: fit-content;
+		font-size: $font-sm;
+
+		&.btn-right {
+			justify-self: flex-end;
+		}
+
+		a {
+			@extend .gradient;
+			font-size: $font-md;
+		}
+	}
+
+	.wp-block-buttons {
+		width: auto;
+		display: flex;
+		align-items: center;
+		margin-top: auto;
+
+		&.centered {
+			justify-content: center;
+		}
+
+		&.align-top {
+			margin-top: initial;
+		}
+
+		.wp-block-button {
+			margin: 0;
+
+			.wp-block-button__link {
+				padding: 0;
+			}
+		}
+	}
+}

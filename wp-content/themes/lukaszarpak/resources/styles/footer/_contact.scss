@@ -1,0 +1,73 @@
+body {
+	.contact-section {
+		@extend .top-bottom-padding;
+		@extend .page-inner-limits;
+
+		.contact-columns ul {
+			margin: 3rem auto;
+			padding: 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+
+			@include media(mobile) {
+				grid-template-columns: repeat(2, 1fr);
+
+				li {
+					max-width: initial;
+
+					&:last-of-type {
+						grid-column: 1/-1;
+					}
+				}
+			}
+
+			@include media(tablet) {
+				grid-template-columns: repeat(3, 1fr);
+
+				li:last-of-type {
+					grid-column: initial;
+				}
+			}
+
+			li {
+				@extend .box-shadow;
+
+				max-width: 300px;
+				width: 100%;
+				border-radius: 1rem;
+				background-color: $color3;
+				margin: 0 auto;
+				transition: 0.2s;
+
+				@include media(tablet) {
+					max-width: initial;
+					margin: 0;
+				}
+
+				&:hover {
+					transform: translateY(-0.7rem);
+				}
+
+				a {
+					padding: 1rem;
+					color: $color7;
+					font-size: $font-md;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					@include media(tablet) {
+						padding: 1.5rem 1rem;
+					}
+
+					i {
+						@extend .gradient;
+						font-size: $font-lg;
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

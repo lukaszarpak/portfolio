@@ -1,0 +1,96 @@
+.card-tags {
+	margin: auto 0 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+
+	span {
+		font-family: $font-body-bold;
+		font-size: $font-xxs;
+		color: $color10;
+		text-transform: uppercase;
+		border: 3px solid #28242f;
+		border-radius: 2rem;
+		padding: 0.2rem 0.85rem 0.25rem;
+	}
+}
+
+.card-list {
+	display: flex;
+	padding: 3rem;
+	overflow-x: scroll;
+	margin: 50px auto;
+
+	.card {
+		height: 350px;
+		width: 400px;
+		min-width: 250px;
+		padding: 3rem 1.5rem;
+		border-radius: 16px;
+		background: $color3;
+		box-shadow: -1rem 0 3rem #000;
+		display: flex;
+		flex-direction: column;
+		transition: 0.2s;
+		margin: 0;
+		scroll-snap-align: start;
+		clear: both;
+		position: relative;
+
+		@include media(tablet) {
+			min-width: 300px;
+		}
+
+		&:focus-within ~ .card,
+		&:hover ~ .card {
+			transform: translateX(130px);
+		}
+
+		&:hover {
+			transform: translateY(-1rem);
+		}
+
+		&:not(:first-child) {
+			margin-left: -130px;
+		}
+
+		.card-header {
+			p {
+				margin: 0 0 1rem;
+				color: $color10;
+				font-size: $font-sm;
+			}
+
+			h3 {
+				margin: 0.25rem 0 2rem;
+
+				a {
+					color: $color7;
+
+					&:hover {
+						@extend .gradient;
+					}
+				}
+			}
+		}
+
+		.card-description {
+			margin-bottom: auto;
+		}
+
+		.card-more {
+			a {
+				@extend .gradient;
+				font-size: $font-md;
+				font-family: $font-body-bold;
+
+				&::after {
+					font-family: $font-icon;
+					font-weight: 700;
+					content: ('\f0da');
+					margin-left: 0.5rem;
+				}
+			}
+		}
+	}
+}
