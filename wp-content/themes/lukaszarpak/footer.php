@@ -14,7 +14,7 @@
 					<a href="mailto:szarpak90@gmail.com" class="heading-font"><i class="fas fa-at"></i>szarpak90@gmail.com</a>
 				</li>
 				<li>
-					<a href="/" target="_blank" class="heading-font"><i class="fab fa-facebook"></i>Łukasz Szrpak</a>
+					<a href="https://www.facebook.com/Lukaszarpak" target="_blank" class="heading-font"><i class="fab fa-facebook"></i>Łukasz Szrpak</a>
 				</li>
 			</ul>
 		</div>
