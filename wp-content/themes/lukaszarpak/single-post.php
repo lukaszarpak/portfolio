@@ -20,7 +20,7 @@ get_header();
 		<?php
 		$projects_posts = get_posts(
 			array(
-				'category'    => 5,
+				'category'    => 3,
 				'numberposts' => 20,
 			)
 		);
@@ -65,7 +65,7 @@ get_header();
 
 		$projects_posts = get_posts(
 			array(
-				'category'    => 5,
+				'category'    => 2,
 				'numberposts' => 20,
 			)
 		);

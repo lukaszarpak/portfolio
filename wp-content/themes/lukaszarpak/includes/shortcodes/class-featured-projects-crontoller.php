@@ -22,7 +22,7 @@ class Featured_Projects_Crontoller {
 
 		shortcode_atts(
 			array(
-				'category_id'     => 1,
+				'category_id'     => 3,
 				'number_of_posts' => 5,
 			),
 			$attr
