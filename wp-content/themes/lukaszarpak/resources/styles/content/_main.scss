@@ -30,12 +30,13 @@ body {
 			display: block;
 			position: absolute;
 			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
 
 			ul {
 				padding: 0;
 				display: grid;
-				grid-template-columns: 1fr;
-				grid-template-rows: repeat(3, 1fr);
+				grid-template-columns: repeat(3, 1fr);
 				gap: 1rem;
 
 				li {
@@ -46,27 +47,6 @@ body {
 						@extend .gradient;
 					}
 				}
-			}
-		}
-
-		.mailbox {
-			display: block;
-			position: absolute;
-			bottom: 30px;
-			background-color: $color3;
-			border-radius: 1rem;
-			@extend .box-shadow;
-			transition: 0.2s;
-
-			a {
-				display: block;
-				padding: 1rem 2rem;
-				font-weight: bold;
-				@extend .gradient;
-			}
-
-			&:hover {
-				transform: translateY(-0.7rem);
 			}
 		}
 	}

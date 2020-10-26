@@ -55,7 +55,7 @@
   text-decoration: none;
 }
 
-.box-shadow, body.page-id-13 .main-wrapper .skills-group .skills-grid li, body.page-id-12 .mailbox, body .contact-section .contact-columns ul li {
+.box-shadow, body.page-id-13 .main-wrapper .skills-group .skills-grid li, body .contact-section .contact-columns ul li {
   box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 0.38);
 }
 
@@ -130,7 +130,7 @@ body .centered {
 body .heading-font {
   font-family: "Courgette-Regular";
 }
-body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .mailbox a, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-footer ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a,
+body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-footer ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a,
 body button a {
   background: -webkit-linear-gradient(#ff8a00, #e52e71);
   -webkit-background-clip: text;
@@ -148,6 +148,11 @@ body .gradient3 {
 }
 body .limit-width {
   max-width: 500px;
+}
+@media only screen and (min-width: 1000px) {
+  body .padding-bottom {
+    margin-bottom: 2.5rem;
+  }
 }
 
 body .wp-block-group {
@@ -311,6 +316,7 @@ body header .mobile-nav-toggle {
   justify-content: flex-start;
   height: 100%;
   cursor: pointer;
+  z-index: 6;
 }
 body header .mobile-nav-toggle i {
   font-size: 30px;
@@ -387,6 +393,9 @@ body .mobile-menu-wrappper .mobile-nav ul {
   list-style: none;
   padding: 3rem;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .mobile-menu-wrappper .mobile-nav ul li {
   margin: 0 0 2rem 0;
@@ -579,12 +588,13 @@ body.page-id-12 .left-icons {
   display: block;
   position: absolute;
   bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 body.page-id-12 .left-icons ul {
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 body.page-id-12 .left-icons ul li {
@@ -592,22 +602,6 @@ body.page-id-12 .left-icons ul li {
 }
 body.page-id-12 .left-icons ul li a i {
   font-size: 1.75em;
-}
-body.page-id-12 .mailbox {
-  display: block;
-  position: absolute;
-  bottom: 30px;
-  background-color: #181521;
-  border-radius: 1rem;
-  transition: 0.2s;
-}
-body.page-id-12 .mailbox a {
-  display: block;
-  padding: 1rem 2rem;
-  font-weight: bold;
-}
-body.page-id-12 .mailbox:hover {
-  transform: translateY(-0.7rem);
 }
 
 body.single-post .main-wrapper {

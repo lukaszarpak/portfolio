@@ -26,8 +26,6 @@
 		}
 		?>
 		<button class="btn btn-right contact-btn" id="contact-btn"><a href="#contact">Contact</a></button>
-	</div>
-</header>
 <aside class="mobile-menu-wrappper">
 	<?php
 	if ( function_exists( 'the_custom_logo' ) ) {
@@ -78,6 +76,8 @@
 	</a>
 </div>	
 </aside>
+</div>
+</header>
 <div class="left-icons">
 	<ul>
 		<li>
@@ -90,7 +90,4 @@
 			<a href="/" target="_blank"><i class="fab fa-facebook"></i></a>
 		</li>
 	</ul>
-</div>
-<div class="mailbox">
-	<a href="mailto: szarpak90@gmail.com">szarpak90@gmail.com</a>
 </div>

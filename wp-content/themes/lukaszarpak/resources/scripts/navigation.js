@@ -2,19 +2,17 @@ const hamburger = $('.mobile-nav-toggle');
 const asideMenu = $('.mobile-menu-wrappper');
 const overlay = $('.overlay');
 
-hamburger.click(openMenu);
-overlay.click(hideMenu);
-asideMenu.click(hideMenu);
-$(window).resize(hideMenu);
+hamburger.click(toggleMenu);
 
-function openMenu() {
-	asideMenu.addClass('open');
-	asideMenu.removeClass('close');
-	overlay.addClass('open');
-}
-
-function hideMenu() {
-	asideMenu.removeClass('open');
-	asideMenu.addClass('close');
-	overlay.removeClass('open');
+function toggleMenu() {
+	if (!asideMenu.hasClass('close') && !asideMenu.hasClass('open')) {
+		asideMenu.addClass('open');
+	} else if (asideMenu.hasClass('close')) {
+		asideMenu.addClass('open');
+		asideMenu.removeClass('close');
+	} else {
+		console.log('close');
+		asideMenu.removeClass('open');
+		asideMenu.addClass('close');
+	}
 }

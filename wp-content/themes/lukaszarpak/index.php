@@ -9,8 +9,6 @@
 get_header();
 ?>
 
-<div class="overlay"></div>
-
 <div class="main-wrapper">
 	<main>
 		<?php the_content(); ?>
