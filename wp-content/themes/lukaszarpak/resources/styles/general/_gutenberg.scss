@@ -9,11 +9,14 @@ body {
 		}
 
 		&.centered-vertically {
+			max-width: initial;
 			align-content: center;
-			margin-top: 0;
-			margin-bottom: 0;
 			padding-top: 0;
 			padding-bottom: 0;
+			background-image: url('../../resources/images/background.png');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
 		}
 
 		&.full-height {

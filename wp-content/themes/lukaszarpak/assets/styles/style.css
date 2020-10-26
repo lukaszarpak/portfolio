@@ -177,11 +177,14 @@ body .wp-block-group .wp-block-group__inner-container {
   height: fit-content;
 }
 body .wp-block-group.centered-vertically {
+  max-width: initial;
   align-content: center;
-  margin-top: 0;
-  margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+  background-image: url("../../resources/images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 body .wp-block-group.full-height {
   height: 100vh;

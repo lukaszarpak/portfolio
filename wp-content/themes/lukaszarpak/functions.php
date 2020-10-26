@@ -12,7 +12,7 @@
  */
 require_once 'autoload.php';
 
-define( 'LUKASZARPAK_VERSION', '1.0.13' );
+define( 'LUKASZARPAK_VERSION', '1.0.14' );
 define( 'LUKASZARPAK_URL', get_stylesheet_directory_uri() );
 define( 'LUKASZARPAK_PATH', get_stylesheet_directory() );
 
