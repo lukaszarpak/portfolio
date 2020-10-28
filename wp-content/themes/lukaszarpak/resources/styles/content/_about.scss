@@ -4,7 +4,7 @@ body.page-id-13 {
 
 		.wp-block-columns {
 			&.about-columns {
-				gap: 5rem 2rem;
+				gap: 5rem 7rem;
 			}
 
 			&.experience {
@@ -88,6 +88,15 @@ body.page-id-13 {
 						&:focus-within ~ .card,
 						&:hover ~ .card {
 							transform: translateY(200px);
+						}
+
+						@include media(tablet) {
+							&:focus-within ~ .card {
+								transform: translate(0);
+							}
+							&:hover ~ .card {
+								transform: translateY(200px);
+							}
 						}
 
 						&:hover {

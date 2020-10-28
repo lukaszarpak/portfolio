@@ -55,7 +55,7 @@
   text-decoration: none;
 }
 
-.box-shadow, body.page-id-13 .main-wrapper .skills-group .skills-grid li, body .contact-section .contact-columns ul li {
+.box-shadow, body.page-id-12 .main-wrapper .skills-group .skills-grid li, body .contact-section .contact-columns ul li {
   box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 0.38);
 }
 
@@ -130,7 +130,7 @@ body .centered {
 body .heading-font {
   font-family: "Courgette-Regular";
 }
-body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-icons ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a,
+body .gradient, body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-12 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-icons ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a,
 body button a {
   background: -webkit-linear-gradient(#ff8a00, #e52e71);
   -webkit-background-clip: text;
@@ -226,9 +226,7 @@ body iframe {
 
 body .btn,
 body button {
-  padding: 0.3rem 3rem 0.4rem;
-  border: 3px solid #e9e9e9;
-  border-radius: 0;
+  border: none;
   font-family: "Lato-Bold";
   text-align: center;
   text-decoration: none;
@@ -237,24 +235,28 @@ body button {
   transition: 0.3s;
   width: fit-content;
   font-size: 1em;
+  padding: 0;
 }
 body .btn.btn-right,
 body button.btn-right {
   justify-self: flex-end;
 }
-body .btn.contact-btn,
-body button.contact-btn {
+body .btn.contact-btn a,
+body button.contact-btn a {
   padding: 0.3rem 1rem 0.4rem;
 }
 @media only screen and (min-width: 600px) {
-  body .btn.contact-btn,
-body button.contact-btn {
+  body .btn.contact-btn a,
+body button.contact-btn a {
     padding: 0.3rem 3rem 0.4rem;
   }
 }
 body .btn a,
 body button a {
   font-size: 1.25em;
+  padding: 0.3rem 3rem 0.4rem;
+  border: 3px solid #e9e9e9;
+  border-radius: 0;
 }
 body .wp-block-buttons {
   width: auto;
@@ -280,7 +282,7 @@ body .wp-block-buttons .wp-block-button {
   margin: 0;
 }
 body .wp-block-buttons .wp-block-button .wp-block-button__link {
-  padding: 0;
+  padding: 0.3rem 3rem 0.4rem;
 }
 
 html {
@@ -1019,60 +1021,60 @@ body.single-post .main-wrapper main .wp-block-image {
   margin-left: 0.5rem;
 }
 
-body.page-id-13 .main-wrapper {
+body.page-id-12 .main-wrapper {
   margin-top: 8rem;
 }
-body.page-id-13 .main-wrapper .wp-block-columns.about-columns {
-  gap: 5rem 2rem;
+body.page-id-12 .main-wrapper .wp-block-columns.about-columns {
+  gap: 5rem 7rem;
 }
-body.page-id-13 .main-wrapper .wp-block-columns.experience {
+body.page-id-12 .main-wrapper .wp-block-columns.experience {
   grid-template-columns: 1fr;
   gap: 0;
 }
 @media only screen and (min-width: 600px) {
-  body.page-id-13 .main-wrapper .wp-block-columns.experience {
+  body.page-id-12 .main-wrapper .wp-block-columns.experience {
     grid-template-columns: 40px auto;
   }
 }
-body.page-id-13 .main-wrapper .wp-block-columns.experience .years-column {
+body.page-id-12 .main-wrapper .wp-block-columns.experience .years-column {
   display: none;
 }
 @media only screen and (min-width: 600px) {
-  body.page-id-13 .main-wrapper .wp-block-columns.experience .years-column {
+  body.page-id-12 .main-wrapper .wp-block-columns.experience .years-column {
     display: block;
   }
 }
-body.page-id-13 .main-wrapper .wp-block-columns.experience .years {
+body.page-id-12 .main-wrapper .wp-block-columns.experience .years {
   display: grid;
   gap: 15px;
   padding-top: 3rem;
 }
-body.page-id-13 .main-wrapper .wp-block-columns.experience .years .year {
+body.page-id-12 .main-wrapper .wp-block-columns.experience .years .year {
   color: #a29db8;
 }
-body.page-id-13 .main-wrapper .wp-block-columns.experience .years span {
+body.page-id-12 .main-wrapper .wp-block-columns.experience .years span {
   text-align: center;
 }
-body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before {
+body.page-id-12 .main-wrapper .wp-block-columns.experience .years .dot::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   content: "";
   font-size: 10px;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description {
   align-items: flex-start;
 }
 @media only screen and (min-width: 600px) {
-  body.page-id-13 .main-wrapper .wp-block-columns .experience-description {
+  body.page-id-12 .main-wrapper .wp-block-columns .experience-description {
     align-items: center;
   }
 }
 @media only screen and (min-width: 1000px) {
-  body.page-id-13 .main-wrapper .wp-block-columns .experience-description {
+  body.page-id-12 .main-wrapper .wp-block-columns .experience-description {
     align-items: flex-end;
   }
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list {
   overflow: hidden;
   flex-direction: column;
   margin: 0;
@@ -1083,17 +1085,17 @@ body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-li
   padding: 2rem;
 }
 @media only screen and (min-width: 600px) {
-  body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list {
+  body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list {
     padding: 3rem;
   }
 }
 @media only screen and (min-width: 1160px) {
-  body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list {
+  body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list {
     width: initial;
     max-width: none;
   }
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card {
   height: 300px;
   width: auto;
   min-width: 200px;
@@ -1101,31 +1103,39 @@ body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-li
   margin: -270px 0 0 0;
   box-shadow: 0 0 3rem #000;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card:focus-within ~ .card, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card:hover ~ .card {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card:focus-within ~ .card, body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card:hover ~ .card {
   transform: translateY(200px);
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card:hover {
+@media only screen and (min-width: 1000px) {
+  body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card:focus-within ~ .card {
+    transform: translate(0);
+  }
+  body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card:hover ~ .card {
+    transform: translateY(200px);
+  }
+}
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card:hover {
   transform: translateX(0);
   transform: translateY(-30px);
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card:first-of-type {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card:first-of-type {
   margin: 0;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .card-header {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card .card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .card-header h3 {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card .card-header h3 {
   margin: 0.25rem 0 0.5rem;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .card-tags {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card .card-tags {
   margin: 1rem 0;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons {
   margin-bottom: 2rem;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
@@ -1135,14 +1145,14 @@ body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-li
   width: fit-content;
   justify-content: center;
 }
-body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i {
+body.page-id-12 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i {
   font-size: 2.5em;
 }
-body.page-id-13 .main-wrapper .skills-group {
+body.page-id-12 .main-wrapper .skills-group {
   margin-top: 0;
   margin-bottom: 0;
 }
-body.page-id-13 .main-wrapper .skills-group .skills-grid {
+body.page-id-12 .main-wrapper .skills-group .skills-grid {
   margin: 3rem auto;
   padding: 0;
   display: grid;
@@ -1150,16 +1160,16 @@ body.page-id-13 .main-wrapper .skills-group .skills-grid {
   gap: 2rem;
 }
 @media only screen and (min-width: 600px) {
-  body.page-id-13 .main-wrapper .skills-group .skills-grid {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 1000px) {
-  body.page-id-13 .main-wrapper .skills-group .skills-grid {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-body.page-id-13 .main-wrapper .skills-group .skills-grid li {
+body.page-id-12 .main-wrapper .skills-group .skills-grid li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1174,28 +1184,28 @@ body.page-id-13 .main-wrapper .skills-group .skills-grid li {
   font-size: 1.25em;
 }
 @media only screen and (min-width: 600px) {
-  body.page-id-13 .main-wrapper .skills-group .skills-grid li.last {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid li.last {
     grid-column: 1/3;
   }
 }
 @media only screen and (min-width: 1000px) {
-  body.page-id-13 .main-wrapper .skills-group .skills-grid li {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid li {
     max-width: 300px;
   }
-  body.page-id-13 .main-wrapper .skills-group .skills-grid li.last {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid li.last {
     grid-column: initial;
   }
-  body.page-id-13 .main-wrapper .skills-group .skills-grid li:nth-of-type(4) {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid li:nth-of-type(4) {
     grid-column: 1/3;
     grid-row: 2;
   }
-  body.page-id-13 .main-wrapper .skills-group .skills-grid li:nth-of-type(5) {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid li:nth-of-type(5) {
     grid-column: 2/4;
     grid-row: 2;
   }
 }
 @media only screen and (min-width: 1380px) {
-  body.page-id-13 .main-wrapper .skills-group .skills-grid li {
+  body.page-id-12 .main-wrapper .skills-group .skills-grid li {
     max-width: 420px;
   }
 }
