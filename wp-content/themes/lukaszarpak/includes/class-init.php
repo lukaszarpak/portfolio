@@ -20,6 +20,7 @@ class Init {
 		add_theme_support( 'custom-logo' );
 
 		add_action( 'after_setup_theme', array( $this, 'custom_logo_setup' ), 20 );
+
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_jquery' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'add_scripts' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'add_styles' ) );

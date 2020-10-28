@@ -127,61 +127,158 @@ body.single-post {
 
 			.section-title {
 				font-size: $font-lg;
+
+				@include media(desktop) {
+					margin-bottom: 1rem;
+				}
 			}
 
 			.card-list {
-				overflow-y: scroll;
-				flex-direction: column;
 				margin: 0;
 				height: 450px;
-				overflow-x: hidden;
-				width: 70%;
-				max-width: 500px;
-
-				@include media(desktop) {
-					width: initial;
-					max-width: none;
-				}
+				width: 100%;
+				max-width: none;
+				box-sizing: border-box;
+				display: flex;
+				flex-wrap: wrap;
+				overflow-x: initial;
+				padding: 0;
+				margin-top: 1rem;
 
 				&:first-of-type {
-					margin-bottom: 4rem;
+					margin-bottom: 1rem;
+				}
+
+				@include media(desktop) {
+					padding: 3rem;
+					overflow-y: scroll;
+					overflow-x: hidden;
+					width: initial;
+					max-width: initial;
+					box-sizing: initial;
+					display: flex;
+					// flex-direction: column;
+					margin-top: 0;
+
+					&:first-of-type {
+						margin-bottom: 4rem;
+					}
 				}
 
 				.card {
-					height: 300px;
-					width: auto;
-					min-width: 200px;
-					padding: 1.5rem 1.5rem 4rem;
-					margin: -270px 0 0 0;
+					min-width: initial;
+					height: 60px;
+					width: 40%;
+					margin: 0.5rem auto;
 					box-shadow: 0 0 3rem #000;
+					box-sizing: border-box;
+					align-items: center;
+					justify-content: center;
+					padding: 0.5rem;
+					transition: none;
 
+					&:hover,
 					&:focus ~ .card,
 					&:hover ~ .card {
-						transform: translateY(210px);
-					}
-
-					&:hover {
+						transform: translateY(0);
 						transform: translateX(0);
-						transform: translateY(-30px);
 					}
 
-					&:first-of-type {
-						margin: 0;
-					}
+					@include media(desktop) {
+						padding: 1.5rem 1.5rem 4rem;
+						height: 300px;
+						width: 100%;
+						min-width: 200px;
+						margin: -270px 0 0 0;
+						box-sizing: initial;
+						align-items: initial;
+						justify-content: initial;
+						transition: 0.2s;
 
-					.card-header {
-						h3 {
+						&:focus ~ .card,
+						&:hover ~ .card {
+							transform: translateY(210px);
+						}
+
+						&:hover {
+							transform: translateX(0);
+							transform: translateY(-30px);
+						}
+
+						&:first-of-type {
 							margin: 0;
-							font-size: 1.5rem;
 						}
 					}
 
-					.card-description p {
-						margin: 0;
+					.card-header {
+						width: 100%;
+						height: 100%;
+
+						@include media(desktop) {
+							width: initial;
+							height: initial;
+						}
+
+						h3 {
+							width: 100%;
+							height: 100%;
+							margin: 0;
+							font-size: 1rem;
+
+							@include media(desktop) {
+								width: initial;
+								height: initial;
+								font-size: 1.5rem;
+
+								a {
+									display: initial;
+									width: initial;
+									height: initial;
+								}
+							}
+
+							a {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								width: 100%;
+								height: 100%;
+
+								@include media(desktop) {
+									display: initial;
+									width: initial;
+									height: initial;
+								}
+							}
+						}
+					}
+
+					.card-description {
+						display: none;
+
+						@include media(desktop) {
+							display: block;
+						}
+						p {
+							margin: 0;
+						}
 					}
 
 					.card-tags {
+						display: none;
+
+						@include media(desktop) {
+							display: flex;
+						}
 						margin: 1rem 0;
+					}
+
+					.card-more {
+						display: none;
+
+						@include media(desktop) {
+							display: block;
+						}
 					}
 				}
 			}

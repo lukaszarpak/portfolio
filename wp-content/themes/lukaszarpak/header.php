@@ -32,17 +32,9 @@
 		the_custom_logo();
 	}
 	?>
-	<nav class="mobile-nav">
-		<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'top-menu',
-				)
-			);
-			?>
-	</nav>
-	<div class="menu-footer">
-	<ul>
+	<div class="menu-icons">
+
+		<ul>
 			<li>
 				<a href="https://www.linkedin.com/in/%C5%82ukasz-szarpak-096b15149/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 			</li>
@@ -53,7 +45,17 @@
 				<a href="https://www.facebook.com/Lukaszarpak" target="_blank"><i class="fab fa-facebook"></i></a>
 			</li>
 		</ul>
-	&copy;
+	</div>
+	<nav class="mobile-nav">
+		<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'top-menu',
+				)
+			);
+			?>
+	</nav>
+	<div class="menu-footer">
 	<a href="
 		<?php
 			/**
@@ -65,6 +67,7 @@
 			echo esc_url( home_url( '/' ) );
 		?>
 			">
+			&copy;
 			<?php
 			echo esc_attr(
 				date_i18n(

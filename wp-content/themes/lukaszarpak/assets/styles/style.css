@@ -130,7 +130,7 @@ body .centered {
 body .heading-font {
   font-family: "Courgette-Regular";
 }
-body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-footer ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a,
+body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-icons ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a,
 body button a {
   background: -webkit-linear-gradient(#ff8a00, #e52e71);
   -webkit-background-clip: text;
@@ -315,10 +315,17 @@ body header .header-content .custom-logo-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s;
 }
 body header .header-content .custom-logo-link .custom-logo {
   width: 68px;
   height: auto;
+}
+body header .header-content .custom-logo-link.show {
+  opacity: 1;
+}
+body header .header-content .custom-logo-link.hide {
+  opacity: 0;
 }
 body header .header-content nav {
   display: flex;
@@ -371,7 +378,7 @@ body .mobile-menu-wrappper {
   border-radius: 1rem;
   opacity: 0;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr 1fr auto 2fr;
   visibility: hidden;
 }
 body .mobile-menu-wrappper.open {
@@ -435,6 +442,21 @@ body .mobile-menu-wrappper .mobile-nav ul li a {
   font-size: 1.75em;
   font-family: "Courgette-Regular";
 }
+body .mobile-menu-wrappper .menu-icons {
+  justify-self: center;
+}
+body .mobile-menu-wrappper .menu-icons ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+body .mobile-menu-wrappper .menu-icons ul li {
+  margin: 0;
+}
+body .mobile-menu-wrappper .menu-icons ul li a i {
+  font-size: 1.75em;
+}
 body .mobile-menu-wrappper .custom-logo-link {
   display: flex;
   align-items: center;
@@ -446,18 +468,11 @@ body .mobile-menu-wrappper .custom-logo-link .custom-logo {
 }
 body .mobile-menu-wrappper .menu-footer {
   justify-self: center;
+  align-self: flex-end;
+  padding-bottom: 2rem;
 }
-body .mobile-menu-wrappper .menu-footer ul {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-body .mobile-menu-wrappper .menu-footer ul li {
-  margin: 0;
-}
-body .mobile-menu-wrappper .menu-footer ul li a i {
-  font-size: 1.75em;
+body .mobile-menu-wrappper .menu-footer a {
+  color: #534f63;
 }
 body.admin-bar .mobile-menu-wrappper .custom-logo-link {
   padding-top: 46px;
@@ -745,51 +760,149 @@ body.single-post .main-wrapper aside .projects-menu-exit i {
 body.single-post .main-wrapper aside .section-title {
   font-size: 1.75em;
 }
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .section-title {
+    margin-bottom: 1rem;
+  }
+}
 body.single-post .main-wrapper aside .card-list {
-  overflow-y: scroll;
-  flex-direction: column;
   margin: 0;
   height: 450px;
-  overflow-x: hidden;
-  width: 70%;
-  max-width: 500px;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: initial;
+  padding: 0;
+  margin-top: 1rem;
+}
+body.single-post .main-wrapper aside .card-list:first-of-type {
+  margin-bottom: 1rem;
 }
 @media only screen and (min-width: 1160px) {
   body.single-post .main-wrapper aside .card-list {
+    padding: 3rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
     width: initial;
-    max-width: none;
+    max-width: initial;
+    box-sizing: initial;
+    display: flex;
+    margin-top: 0;
+  }
+  body.single-post .main-wrapper aside .card-list:first-of-type {
+    margin-bottom: 4rem;
   }
 }
-body.single-post .main-wrapper aside .card-list:first-of-type {
-  margin-bottom: 4rem;
-}
 body.single-post .main-wrapper aside .card-list .card {
-  height: 300px;
-  width: auto;
-  min-width: 200px;
-  padding: 1.5rem 1.5rem 4rem;
-  margin: -270px 0 0 0;
+  min-width: initial;
+  height: 60px;
+  width: 40%;
+  margin: 0.5rem auto;
   box-shadow: 0 0 3rem #000;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: none;
 }
-body.single-post .main-wrapper aside .card-list .card:focus ~ .card, body.single-post .main-wrapper aside .card-list .card:hover ~ .card {
-  transform: translateY(210px);
-}
-body.single-post .main-wrapper aside .card-list .card:hover {
+body.single-post .main-wrapper aside .card-list .card:hover, body.single-post .main-wrapper aside .card-list .card:focus ~ .card, body.single-post .main-wrapper aside .card-list .card:hover ~ .card {
+  transform: translateY(0);
   transform: translateX(0);
-  transform: translateY(-30px);
 }
-body.single-post .main-wrapper aside .card-list .card:first-of-type {
-  margin: 0;
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .card-list .card {
+    padding: 1.5rem 1.5rem 4rem;
+    height: 300px;
+    width: 100%;
+    min-width: 200px;
+    margin: -270px 0 0 0;
+    box-sizing: initial;
+    align-items: initial;
+    justify-content: initial;
+    transition: 0.2s;
+  }
+  body.single-post .main-wrapper aside .card-list .card:focus ~ .card, body.single-post .main-wrapper aside .card-list .card:hover ~ .card {
+    transform: translateY(210px);
+  }
+  body.single-post .main-wrapper aside .card-list .card:hover {
+    transform: translateX(0);
+    transform: translateY(-30px);
+  }
+  body.single-post .main-wrapper aside .card-list .card:first-of-type {
+    margin: 0;
+  }
+}
+body.single-post .main-wrapper aside .card-list .card .card-header {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .card-list .card .card-header {
+    width: initial;
+    height: initial;
+  }
 }
 body.single-post .main-wrapper aside .card-list .card .card-header h3 {
+  width: 100%;
+  height: 100%;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .card-list .card .card-header h3 {
+    width: initial;
+    height: initial;
+    font-size: 1.5rem;
+  }
+  body.single-post .main-wrapper aside .card-list .card .card-header h3 a {
+    display: initial;
+    width: initial;
+    height: initial;
+  }
+}
+body.single-post .main-wrapper aside .card-list .card .card-header h3 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .card-list .card .card-header h3 a {
+    display: initial;
+    width: initial;
+    height: initial;
+  }
+}
+body.single-post .main-wrapper aside .card-list .card .card-description {
+  display: none;
+}
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .card-list .card .card-description {
+    display: block;
+  }
 }
 body.single-post .main-wrapper aside .card-list .card .card-description p {
   margin: 0;
 }
 body.single-post .main-wrapper aside .card-list .card .card-tags {
+  display: none;
   margin: 1rem 0;
+}
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .card-list .card .card-tags {
+    display: flex;
+  }
+}
+body.single-post .main-wrapper aside .card-list .card .card-more {
+  display: none;
+}
+@media only screen and (min-width: 1160px) {
+  body.single-post .main-wrapper aside .card-list .card .card-more {
+    display: block;
+  }
 }
 body.single-post .main-wrapper main {
   background-color: #1f1c28;

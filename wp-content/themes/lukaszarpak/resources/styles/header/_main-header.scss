@@ -16,10 +16,19 @@ body {
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				transition: 0.2s;
 
 				.custom-logo {
 					width: 68px;
 					height: auto;
+				}
+
+				&.show {
+					opacity: 1;
+				}
+
+				&.hide {
+					opacity: 0;
 				}
 			}
 

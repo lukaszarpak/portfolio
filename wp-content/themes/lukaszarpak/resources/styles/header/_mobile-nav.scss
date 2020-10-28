@@ -10,7 +10,7 @@ body {
 		border-radius: 1rem;
 		opacity: 0;
 		display: grid;
-		grid-template-rows: auto 1fr auto;
+		grid-template-rows: 1fr 1fr auto 2fr;
 		visibility: hidden;
 
 		&.open {
@@ -89,18 +89,7 @@ body {
 			}
 		}
 
-		.custom-logo-link {
-			display: flex;
-			align-items: center;
-			justify-self: center;
-
-			.custom-logo {
-				width: 68px;
-				height: auto;
-			}
-		}
-
-		.menu-footer {
+		.menu-icons {
 			justify-self: center;
 
 			ul {
@@ -117,6 +106,27 @@ body {
 						@extend .gradient;
 					}
 				}
+			}
+		}
+
+		.custom-logo-link {
+			display: flex;
+			align-items: center;
+			justify-self: center;
+
+			.custom-logo {
+				width: 68px;
+				height: auto;
+			}
+		}
+
+		.menu-footer {
+			justify-self: center;
+			align-self: flex-end;
+			padding-bottom: 2rem;
+
+			a {
+				color: $color10;
 			}
 		}
 	}
