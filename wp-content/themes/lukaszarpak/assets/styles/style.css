@@ -910,25 +910,28 @@ body.single-post .main-wrapper main {
   border-radius: 1rem;
   height: fit-content;
 }
-body.single-post .main-wrapper main h1 {
-  margin-bottom: 3rem;
+@media only screen and (min-width: 600px) {
+  body.single-post .main-wrapper main h1 {
+    margin-bottom: 2rem;
+  }
+}
+body.single-post .main-wrapper main .card-tags {
+  margin: 1rem 0;
 }
 body.single-post .main-wrapper main p {
   color: #b5b2c1;
 }
 body.single-post .main-wrapper main .icons {
   margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
 }
 body.single-post .main-wrapper main .icons ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   padding: 0;
-  display: flex;
-  margin: 1rem 0 0 0;
+  margin: 1rem auto 0 0;
   width: fit-content;
-  gap: 1rem;
   justify-content: center;
 }
 body.single-post .main-wrapper main .icons ul li a i {
@@ -942,7 +945,6 @@ body.single-post .main-wrapper main .wp-block-image {
   margin: auto 0 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
 }
 .card-tags span {
   font-family: "Lato-Bold";
@@ -952,6 +954,7 @@ body.single-post .main-wrapper main .wp-block-image {
   border: 3px solid #28242f;
   border-radius: 2rem;
   padding: 0.2rem 0.85rem 0.25rem;
+  margin: 0 5px 5px 0;
 }
 
 .card-list {
