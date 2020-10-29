@@ -11,16 +11,19 @@ body {
 		width: fit-content;
 		font-size: $font-sm;
 		padding: 0;
+		overflow: initial;
 
 		&.btn-right {
 			justify-self: flex-end;
 		}
 
-		&.contact-btn a {
-			padding: 0.3rem 1rem 0.4rem;
+		&.contact-btn {
+			a {
+				padding: 0.3rem 1rem 0.4rem;
 
-			@include media(mobile) {
-				padding: 0.3rem 3rem 0.4rem;
+				@include media(mobile) {
+					padding: 0.3rem 3rem 0.4rem;
+				}
 			}
 		}
 
