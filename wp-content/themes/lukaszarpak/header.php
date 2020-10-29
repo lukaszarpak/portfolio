@@ -25,7 +25,9 @@
 			the_custom_logo();
 		}
 		?>
-		<button class="btn btn-right contact-btn" id="contact-btn"><a href="#contact">Contact</a></button>
+		<div class="header-btn">
+			<div class="btn contact-btn" id="contact-btn"><a href="#contact">Contact</a></div>
+		</div>
 <aside class="mobile-menu-wrappper">
 	<?php
 	if ( function_exists( 'the_custom_logo' ) ) {

@@ -130,8 +130,7 @@ body .centered {
 body .heading-font {
   font-family: "Courgette-Regular";
 }
-body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-icons ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a,
-body button a {
+body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-id-13 .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper aside .projects-menu-exit i:hover, body.single-post .main-wrapper .projects-toggle:hover, body.page-id-12 .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-icons ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a {
   background: -webkit-linear-gradient(#ff8a00, #e52e71);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -224,8 +223,8 @@ body iframe {
   width: 100%;
 }
 
-body .btn,
-body button {
+body .btn {
+  display: flex;
   border: none;
   font-family: "Lato-Bold";
   text-align: center;
@@ -236,24 +235,16 @@ body button {
   width: fit-content;
   font-size: 1em;
   padding: 0;
-  overflow: initial;
 }
-body .btn.btn-right,
-body button.btn-right {
-  justify-self: flex-end;
-}
-body .btn.contact-btn a,
-body button.contact-btn a {
+body .btn.contact-btn a {
   padding: 0.3rem 1rem 0.4rem;
 }
 @media only screen and (min-width: 600px) {
-  body .btn.contact-btn a,
-body button.contact-btn a {
+  body .btn.contact-btn a {
     padding: 0.3rem 3rem 0.4rem;
   }
 }
-body .btn a,
-body button a {
+body .btn a {
   font-size: 1.25em;
   padding: 0.3rem 3rem 0.4rem;
   border: 3px solid #e9e9e9;
@@ -357,6 +348,9 @@ body header .mobile-nav-toggle {
 body header .mobile-nav-toggle i {
   font-size: 30px;
   color: #e9e9e9;
+}
+body header .header-btn {
+  margin-left: auto;
 }
 body.admin-bar header {
   top: 46px;
