@@ -101,21 +101,24 @@ body {
 
 	.gradient {
 		background: -webkit-linear-gradient($color8, $color9);
+		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
-	.gradient2 {
-		background: -webkit-linear-gradient(0deg, $color8, $color9);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+	// .gradient2 {
+	// 	background: -webkit-linear-gradient(0deg, $color8, $color9);
+	// 	background-clip: text;
+	// 	-webkit-background-clip: text;
+	// 	-webkit-text-fill-color: transparent;
+	// }
 
-	.gradient3 {
-		background: -webkit-linear-gradient(270deg, #3fb27f, #35475a);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+	// .gradient3 {
+	// 	background: -webkit-linear-gradient(270deg, #3fb27f, #35475a);
+	// 	background-clip: text;
+	// 	-webkit-background-clip: text;
+	// 	-webkit-text-fill-color: transparent;
+	// }
 
 	.limit-width {
 		max-width: 500px;
@@ -137,8 +140,12 @@ body {
 		}
 	}
 
-	*:focus {
-		outline: none;
-		-webkit-appearance: none;
+	* {
+		-webkit-tap-highlight-color: transparent;
+
+		:focus {
+			outline: none !important;
+			-webkit-appearance: none;
+		}
 	}
 }

@@ -17,8 +17,13 @@
 
 <header>
 	<div class="header-content">
-		<div class="mobile-nav-toggle">
+		<!-- <div class="mobile-nav-toggle">
 			<i class="fas fa-bars"></i>
+		</div> -->
+		<div class="mobile-nav-toggle">
+			<div class="hamburger-menu-wrappper">
+				<div class="hamburger-menu-btn"></div>
+			</div>
 		</div>
 		<?php
 		if ( function_exists( 'the_custom_logo' ) ) {

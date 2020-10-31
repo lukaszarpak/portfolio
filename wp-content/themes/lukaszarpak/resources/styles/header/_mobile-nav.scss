@@ -13,6 +13,12 @@ body {
 		grid-template-rows: 1fr 1fr auto 2fr;
 		visibility: hidden;
 
+		@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+			-webkit-backdrop-filter: blur(10px);
+			backdrop-filter: blur(10px);
+			background-color: rgba($color2, $alpha: 0.8);
+		}
+
 		&.open {
 			animation: mobile-menu-open 0.3s forwards ease-out;
 		}
@@ -93,6 +99,7 @@ body {
 			justify-self: center;
 
 			ul {
+				list-style: none;
 				padding: 0;
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);

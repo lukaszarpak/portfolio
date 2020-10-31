@@ -34,6 +34,7 @@ body {
 			transform: translateX(-50%);
 
 			ul {
+				list-style: none;
 				padding: 0;
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);

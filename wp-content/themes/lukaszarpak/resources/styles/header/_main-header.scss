@@ -60,9 +60,50 @@ body {
 			cursor: pointer;
 			z-index: 6;
 
-			i {
-				font-size: 30px;
-				color: $color7;
+			.hamburger-menu-wrappper {
+				display: flex;
+				align-items: center;
+				height: 30px;
+				width: 30px;
+				position: relative;
+
+				.hamburger-menu-btn {
+					height: 3px;
+					width: 100%;
+					background-color: white;
+					transition: all 0.1s ease-in-out;
+
+					&::before,
+					&::after {
+						content: '';
+						position: absolute;
+						height: 3px;
+						width: 100%;
+						background-color: white;
+						transform: translateY(-10px);
+						transition: all 0.2s ease-in-out;
+					}
+
+					&::before {
+						transform: translateY(-10px);
+					}
+
+					&::after {
+						transform: translateY(10px);
+					}
+
+					&.open {
+						background-color: transparent;
+
+						&::before {
+							transform: rotate(45deg);
+						}
+
+						&::after {
+							transform: rotate(-45deg);
+						}
+					}
+				}
 			}
 		}
 
