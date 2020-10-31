@@ -43,7 +43,7 @@ class Featured_Projects_Crontoller {
 			</div>
 
 			<div class="card-description">
-				<p>' . esc_attr( wp_trim_words( get_the_excerpt( $p ), 10, '...' ) ) . '</p>
+				<p>' . esc_attr( wp_trim_words( get_the_excerpt( $p ), 20, '...' ) ) . '</p>
 			</div>
 
 			<div class="card-tags">';
