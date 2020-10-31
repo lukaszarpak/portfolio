@@ -4,6 +4,7 @@ const projectsMenuExit = $('.projects-menu-exit');
 
 projectsToggle.click(openProjectsMenu);
 projectsMenuExit.click(hideProjectsMenu);
+$('.contact-btn').click(hideProjectsMenu);
 
 function openProjectsMenu() {
 	projectsMenu.addClass('open');

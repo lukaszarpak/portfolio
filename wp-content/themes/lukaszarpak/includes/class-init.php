@@ -45,7 +45,6 @@ class Init {
 	public function add_scripts() {
 		if ( ! is_admin() ) {
 			wp_enqueue_script( 'navigation', LUKASZARPAK_URL . '/resources/scripts/navigation.js', array( 'jquery' ), LUKASZARPAK_VERSION, true );
-			wp_enqueue_script( 'contact-form', LUKASZARPAK_URL . '/resources/scripts/contact-form.js', array( 'jquery' ), LUKASZARPAK_VERSION, true );
 			wp_enqueue_script( 'items-position', LUKASZARPAK_URL . '/resources/scripts/items-position.js', array( 'jquery' ), LUKASZARPAK_VERSION, true );
 			wp_enqueue_script( 'animate-scroll', LUKASZARPAK_URL . '/resources/scripts/animate-scroll.js', array( 'jquery' ), LUKASZARPAK_VERSION, true );
 			wp_enqueue_script( 'projects-menu', LUKASZARPAK_URL . '/resources/scripts/projects-menu.js', array( 'jquery' ), LUKASZARPAK_VERSION, true );
