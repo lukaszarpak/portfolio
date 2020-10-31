@@ -136,6 +136,12 @@ body .gradient, body.page-id-13 .main-wrapper .wp-block-columns .experience-desc
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+body .gradient2 {
+  background: -webkit-linear-gradient(0deg, #ff8a00, #e52e71);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 body .limit-width {
   max-width: 500px;
 }
