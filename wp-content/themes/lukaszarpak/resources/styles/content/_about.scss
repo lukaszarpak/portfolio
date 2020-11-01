@@ -7,6 +7,11 @@ body.page-about {
 			padding-bottom: 0;
 		}
 
+		.about-description {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
 		.wp-block-columns {
 			&.about-columns {
 				gap: 5rem 7rem;
@@ -71,7 +76,7 @@ body.page-about {
 					width: 100%;
 					box-sizing: border-box;
 					max-width: initial;
-					padding: 2rem;
+					padding: 3rem 0;
 
 					@include media(mobile) {
 						padding: 3rem;

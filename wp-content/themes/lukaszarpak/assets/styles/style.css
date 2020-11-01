@@ -727,9 +727,9 @@ body.single-post .main-wrapper aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 11rem);
+  height: calc(100vh - 10rem);
   overflow-y: scroll;
-  padding: 7rem 0 4rem;
+  padding: 5rem 0 5rem;
   width: 100vw;
   visibility: hidden;
 }
@@ -798,7 +798,7 @@ body.single-post .main-wrapper aside.close {
 }
 body.single-post .main-wrapper aside .projects-menu-exit {
   position: absolute;
-  top: 7rem;
+  top: 5rem;
   right: 1rem;
   display: flex;
   align-items: center;
@@ -840,24 +840,27 @@ body.single-post .main-wrapper aside .section-title {
 }
 body.single-post .main-wrapper aside .card-list {
   margin: 0;
-  height: 450px;
+  height: fit-content;
+  max-height: 450px;
   width: 100%;
   max-width: none;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  overflow-y: initial;
   overflow-x: initial;
   padding: 0;
   margin-top: 1rem;
 }
 body.single-post .main-wrapper aside .card-list:first-of-type {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 @media only screen and (min-width: 1160px) {
   body.single-post .main-wrapper aside .card-list {
     padding: 3rem;
     overflow-y: scroll;
     overflow-x: hidden;
+    height: 450px;
     width: initial;
     max-width: initial;
     box-sizing: initial;
@@ -1106,6 +1109,10 @@ body.page-about .main-wrapper .about-heading {
   padding-top: 0;
   padding-bottom: 0;
 }
+body.page-about .main-wrapper .about-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 body.page-about .main-wrapper .wp-block-columns.about-columns {
   gap: 5rem 7rem;
 }
@@ -1164,7 +1171,7 @@ body.page-about .main-wrapper .wp-block-columns .experience-description .card-li
   width: 100%;
   box-sizing: border-box;
   max-width: initial;
-  padding: 2rem;
+  padding: 3rem 0;
 }
 @media only screen and (min-width: 600px) {
   body.page-about .main-wrapper .wp-block-columns .experience-description .card-list {

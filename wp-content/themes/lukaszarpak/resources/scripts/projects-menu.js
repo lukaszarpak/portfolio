@@ -2,16 +2,25 @@ const projectsToggle = $('.projects-toggle');
 const projectsMenu = $('.projects-menu');
 const projectsMenuExit = $('.projects-menu-exit');
 
-projectsToggle.click(openProjectsMenu);
-projectsMenuExit.click(hideProjectsMenu);
+projectsToggle.click(toggleProjectsMenu);
+projectsMenuExit.click(toggleProjectsMenu);
 $('.contact-btn').click(hideProjectsMenu);
 
-function openProjectsMenu() {
-	projectsMenu.addClass('open');
-	projectsMenu.removeClass('close');
+function hideProjectsMenu() {
+	if (projectsMenu.hasClass('open')) {
+		projectsMenu.removeClass('open');
+		projectsMenu.addClass('close');
+	}
 }
 
-function hideProjectsMenu() {
-	projectsMenu.addClass('close');
-	projectsMenu.removeClass('open');
+function toggleProjectsMenu() {
+	if (!projectsMenu.hasClass('close') && !projectsMenu.hasClass('open')) {
+		projectsMenu.addClass('open');
+	} else if (projectsMenu.hasClass('close')) {
+		projectsMenu.addClass('open');
+		projectsMenu.removeClass('close');
+	} else {
+		projectsMenu.addClass('close');
+		projectsMenu.removeClass('open');
+	}
 }
