@@ -1074,6 +1074,9 @@ body.single-post .main-wrapper main .wp-block-image {
 .card-list .card:hover {
   transform: translateY(-1rem);
 }
+.card-list .card:hover .card-description p {
+  color: #b5b2c1;
+}
 .card-list .card:not(:first-child) {
   margin-left: -130px;
 }
@@ -1090,6 +1093,10 @@ body.single-post .main-wrapper main .wp-block-image {
 }
 .card-list .card .card-description {
   margin-bottom: auto;
+}
+.card-list .card .card-description p {
+  transition: 0.3s;
+  color: rgba(162, 157, 184, 0.6);
 }
 .card-list .card .card-more a {
   font-size: 1.25em;

@@ -49,6 +49,10 @@
 
 		&:hover {
 			transform: translateY(-1rem);
+
+			.card-description p {
+				color: $color6;
+			}
 		}
 
 		&:not(:first-child) {
@@ -77,6 +81,11 @@
 
 		.card-description {
 			margin-bottom: auto;
+
+			p {
+				transition: 0.3s;
+				color: rgba($color5, 0.6);
+			}
 		}
 
 		.card-more {
