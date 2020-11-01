@@ -1,19 +1,26 @@
 body.single-post {
 	.main-wrapper {
-		@extend .page-limits;
-		margin-top: 4rem;
-		margin-bottom: 4rem;
+		margin: 4rem 0;
 
 		@include media(desktop) {
-			margin-top: 8rem;
+			padding: 0 2rem;
+			margin: 8rem auto 1rem;
+			max-width: $page_width;
+			display: grid;
 			grid-template-columns: 400px auto;
 			gap: 4rem;
 		}
 
 		.projects-toggle {
-			margin: 1rem;
+			padding: 0 1rem;
+			margin: 1rem auto;
+			max-width: $page_width;
 			text-align: center;
 			cursor: pointer;
+
+			@include media(mobile) {
+				padding: 0 2rem;
+			}
 
 			&:hover {
 				@extend .gradient;
@@ -41,6 +48,12 @@ body.single-post {
 			padding: 7rem 0 4rem;
 			width: 100vw;
 			visibility: hidden;
+
+			@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+				-webkit-backdrop-filter: blur(10px);
+				backdrop-filter: blur(10px);
+				background-color: rgba($color2, $alpha: 0.8);
+			}
 
 			@include media(desktop) {
 				position: initial;
@@ -107,17 +120,33 @@ body.single-post {
 			.projects-menu-exit {
 				position: absolute;
 				top: 7rem;
-				right: 15px;
+				right: 1rem;
+				display: flex;
+				align-items: center;
+				height: 30px;
+				width: 30px;
+				background-color: transparent;
 				cursor: pointer;
 
-				i {
-					font-size: $font-xl;
-					color: $color7;
-					transition: 0.3s;
+				&::before,
+				&::after {
+					content: '';
+					position: absolute;
+					height: 3px;
+					width: 100%;
+					background-color: white;
+				}
 
-					&:hover {
-						@extend .gradient;
-					}
+				&::before {
+					transform: rotate(45deg);
+				}
+
+				&::after {
+					transform: rotate(-45deg);
+				}
+
+				@include media(mobile) {
+					right: 2rem;
 				}
 
 				@include media(desktop) {
@@ -285,13 +314,17 @@ body.single-post {
 		}
 
 		main {
-			background-color: $color4;
-			padding: 2rem 1.5rem 5rem;
-			border-radius: 1rem;
+			background-color: $color3;
+			padding: 2rem 1.5rem 3rem;
 			height: fit-content;
 
 			@include media(mobile) {
 				padding: 2rem 2rem 5rem;
+			}
+
+			@include media(desktop) {
+				border-radius: 1rem;
+				background-color: $color4;
 			}
 
 			h1 {
@@ -302,10 +335,6 @@ body.single-post {
 
 			.card-tags {
 				margin: 1rem 0;
-			}
-
-			p {
-				color: $color6;
 			}
 
 			.icons {

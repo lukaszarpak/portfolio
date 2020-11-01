@@ -14,7 +14,7 @@ get_header();
 <div class="main-wrapper">
 	<h3 class="projects-toggle">More projects <i class="fas fa-caret-down"></i></h3>
 	<aside class="projects-menu">
-		<span class="projects-menu-exit"><i class="fas fa-times"></i></span>
+		<span class="projects-menu-exit"></span>
 		<h2 class="section-title">Commercial Projects</h2>
 		<?php
 

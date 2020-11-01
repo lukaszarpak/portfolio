@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lukaszarpak</title>
 
 	<?php
 	/**
@@ -17,9 +18,6 @@
 
 <header>
 	<div class="header-content">
-		<!-- <div class="mobile-nav-toggle">
-			<i class="fas fa-bars"></i>
-		</div> -->
 		<div class="mobile-nav-toggle">
 			<div class="hamburger-menu-wrappper">
 				<div class="hamburger-menu-btn"></div>

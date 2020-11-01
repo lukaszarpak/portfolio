@@ -1,6 +1,11 @@
-body.page-id-13 {
+body.page-about {
 	.main-wrapper {
 		margin-top: 8rem;
+
+		.about-heading {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 
 		.wp-block-columns {
 			&.about-columns {
@@ -178,7 +183,7 @@ body.page-id-13 {
 					background-color: $color3;
 					margin: 0 auto;
 					padding: 1.5rem 1rem;
-					color: $color11;
+					color: $color5;
 					font-size: $font-md;
 					max-width: 200px;
 

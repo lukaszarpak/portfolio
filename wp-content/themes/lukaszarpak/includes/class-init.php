@@ -25,6 +25,7 @@ class Init {
 		add_action( 'wp_enqueue_scripts', array( $this, 'add_scripts' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'add_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_fontawesome' ) );
+		add_filter( 'body_class', array( $this, 'my_body_class' ) );
 
 		$this->init_shortcode( new Featured_Projects_Crontoller() );
 
@@ -103,5 +104,22 @@ class Init {
 
 		add_shortcode( 'projects', array( $controller, 'projects_shortcode' ) );
 	}
+
+	/**
+	 * Initialize shortcodes
+	 *
+	 * @param $classes Display_Projects class
+	 */
+	public function my_body_class( $classes ) {
+
+		if ( is_page() ) {
+			global $page;
+			$title     = 'page-' . strtolower( get_the_title( $page ) );
+			$classes[] = $title;
+
+		}
+		return $classes;
+	}
+
 
 }
