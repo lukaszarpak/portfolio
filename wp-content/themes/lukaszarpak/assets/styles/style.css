@@ -111,7 +111,7 @@ body h4 {
 }
 body a {
   text-decoration: none;
-  color: #0e0c16;
+  color: #b5b2c1;
 }
 body p {
   color: #b5b2c1;
@@ -130,7 +130,7 @@ body .centered {
 body .heading-font {
   font-family: "Courgette-Regular";
 }
-body .gradient, body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-about .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper .projects-toggle:hover, body.page-home .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-icons ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a {
+body .gradient, body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul li a i, body.page-about .main-wrapper .wp-block-columns.experience .years .dot::before, body .card-list .card .card-more a, .card-list .card .card-more body a, body .card-list .card .card-header h3 a:hover, .card-list .card .card-header h3 body a:hover, body.single-post .main-wrapper main .icons ul li a i, body.single-post .main-wrapper .projects-toggle:hover, body.page-home .left-icons ul li a i, body .contact-section .contact-columns ul li a i, body footer .footer-second ul li a i, body .mobile-menu-wrappper .menu-icons ul li a i, body .mobile-menu-wrappper .mobile-nav ul li a:hover, body .btn a, body p a {
   background: -webkit-linear-gradient(#ff8a00, #e52e71);
   background-clip: text;
   -webkit-background-clip: text;

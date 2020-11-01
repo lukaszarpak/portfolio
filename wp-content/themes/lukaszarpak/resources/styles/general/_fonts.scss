@@ -75,7 +75,7 @@ body {
 
 	a {
 		text-decoration: none;
-		color: $color2;
+		color: $color6;
 	}
 
 	p {
@@ -83,6 +83,10 @@ body {
 		margin: 0.5rem 0;
 		line-height: 1.8rem;
 		font-size: $font-md;
+
+		a {
+			@extend .gradient;
+		}
 	}
 
 	.bold {
