@@ -1192,11 +1192,11 @@ body.page-about .main-wrapper .wp-block-columns .experience-description .card-li
   }
 }
 body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card {
-  height: 300px;
+  height: fit-content;
   width: auto;
   min-width: 200px;
-  padding: 1.5rem 1.5rem 4rem;
-  margin: -270px 0 0 0;
+  padding: 1.5rem;
+  margin: -200px 0 0 0;
   box-shadow: 0 0 3rem #000;
 }
 body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card:focus-within ~ .card, body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card:hover ~ .card {
@@ -1207,7 +1207,7 @@ body.page-about .main-wrapper .wp-block-columns .experience-description .card-li
     transform: translate(0);
   }
   body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card:hover ~ .card {
-    transform: translateY(200px);
+    transform: translateY(150px);
   }
 }
 body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card:hover {
@@ -1229,7 +1229,7 @@ body.page-about .main-wrapper .wp-block-columns .experience-description .card-li
   margin: 1rem 0;
 }
 body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card .icons {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 body.page-about .main-wrapper .wp-block-columns .experience-description .card-list .card .icons ul {
   display: grid;
