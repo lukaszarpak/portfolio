@@ -737,7 +737,7 @@ body.single-post .main-wrapper aside {
   body.single-post .main-wrapper aside {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(14, 12, 22, 0.8);
+    background-color: rgba(14, 12, 22, 0.88);
   }
 }
 @media only screen and (min-width: 1160px) {
