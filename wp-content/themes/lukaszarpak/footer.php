@@ -3,7 +3,7 @@
 		<div class="contact-top">
 			<h2 class="centered">Contact</h2>
 			<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-			<p class="limit-width centered">If you have any questions, or you are interested in a cooperation, or you just simply want to know more about me you are welcome to contact me through these channels.</p>
+			<p class="limit-width centered">Should you have any questions concerning me or my work, you are more than welcome to contact me through these channels.</p>
 		</div>
 		<div class="contact-columns">
 			<ul>
